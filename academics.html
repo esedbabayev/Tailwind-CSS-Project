@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- FA -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        screens:
+        {
+          lg: '1090px'
+        },
+        extend: {
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            raleway: ['Raleway', 'sans-serif'],
+          },
+          colors: {
+            mainOrange: '#FF8D4D',
+            borderGrey: '#262626',
+            veryLightOrange: '#FFEFE5',
+            bodyColor: '#FFF5F0'
+          },
+          boxShadow: {
+            oreangeShadow: '6px 6px 0px 1px #FFBE99',
+            cardShadow: '4px 4px 0px 1px #1E1E1E'
+          },
+        }
+      }
+    }
+  </script>
+  <title>Mini Project</title>
+</head>
+
+<body class="bg-bodyColor">
+  <header class="flex flex-col font-outfit">
+    <!-- bg -->
+    <div class="flex justify-center mt-10 cursor-pointer lg:hidden px-4">
+      <img src="./images/index/background.svg" alt="background" class="w-full">
+    </div>
+    <!-- desktop bg -->
+    <div class="hidden lg:flex  mt-4 px-[50px] cursor-pointer">
+      <img src="./images/index/desktopBg.svg" alt="bg" class="w-full">
+    </div>
+    <!-- nav -->
+    <nav class="flex justify-center px-4 lg:px-[50px] mt-[14px]">
+      <!-- holder -->
+      <div
+        class="w-full flex items-center rounded-lg overflow-hidden justify-between border-solid border-2 border-borderGrey">
+        <!-- logo -->
+        <div class=" bg-mainOrange py-4 px-5 border-solid border-r-2 border-borderGrey h-full">
+          <img src="./images/index/logo.svg" alt="logo">
+        </div>
+        <!-- navbar -->
+        <div class="hidden lg:block">
+          <ul class="flex ">
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium bg-veryLightOrange">
+              <a href="academics.html">Academics</a>
+            </li>
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="#">Admissions</a>
+            </li>
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="#">Student Life</a>
+            </li>
+            <li class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium bg-[#FFAE80]"><a
+                href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- burger -->
+        <div
+          class="px-[30px] py-[17px] border-solid border-l-2 border-borderGrey bg-veryLightOrange cursor-pointer block lg:hidden">
+          <img src="./images/index/burger.svg" alt="burger">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main class="mt-10 font-outfit">
+    <!-- section 1 -->
+    <section>
+      <!-- holder of all -->
+      <div class="px-4 lg:px-20">
+        <!-- holder -->
+        <div class="relative bg-white px-[30px] pt-[60px] pb-[50px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow flex flex-col items-center gap-5 text-center
+                  lg:flex lg:flex-row lg:text-left lg:gap-[100px] lg:px-20">
+          <!-- corner image -->
+          <div class="absolute top-0 left-0">
+            <img src="images/about/corner.svg" alt="corner">
+          </div>
+          <!-- btn and heading -->
+          <div class="lg:py-[102px] flex flex-col gap-[10px] lg:w-[260%]">
+            <div class="mb-[10px]">
+              <button class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">Academics</button>
+            </div>
+            <div>
+              <h2 class="font-raleway font-bold text-3xl lg:text-[38px]">Nurturing Young Minds for Success</h2>
+            </div>
+          </div>
+          <!-- text -->
+          <div class="lg:py-[102px]">
+            <p class="font-medium">Welcome to our Academics page, where we take pride in providing a comprehensive and
+              stimulating educational experience for your child. Our kindergarten school's academic program is
+              thoughtfully designed to foster a love for learning while building a strong foundation of essential skills
+              and knowledge. From language arts and mathematics to science and social studies, our curriculum is
+              carefully crafted to spark curiosity and encourage active exploration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="mt-20 lg:mt-[150px]">
+      <!-- holder of all-->
+      <div>
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center px-4">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Our Features</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px] text-center">
+            <h2>Our Special Features</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[250px]">
+            <p class="text-center font-medium leading-6">Our kinder garden school provides a nurturing and stimulating
+              environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting
+              educational journey together!</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="mt-[78px] px-4 flex flex-col gap-[68px]
+              lg:grid grid-cols-3 lg:px-20">
+          <!-- card -->
+          <div
+            class="bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+            <!-- icon -->
+            <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <!-- texts -->
+            <div class="flex flex-col gap-[10px]">
+              <!-- h3 -->
+              <div>
+                <h3 class="font-raleway font-bold text-[22px] leading-7">Thematic Learning</h3>
+              </div>
+              <!-- p -->
+              <p class="font-medium leading-6">Our curriculum is centered around engaging themes that capture children's
+                imaginations. Each theme integrates multiple subjects, making learning enjoyable and relevant.</p>
+            </div>
+          </div>
+          <!-- card 2-->
+          <div
+            class="bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+            <!-- icon -->
+            <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <!-- texts -->
+            <div class="flex flex-col gap-[10px]">
+              <!-- h3 -->
+              <div>
+                <h3 class="font-raleway font-bold text-[22px] leading-7">STEAM Education</h3>
+              </div>
+              <!-- p -->
+              <p class="font-medium leading-6">We offer innovative STEAM (Science, Technology, Engineering, Arts, and
+                Mathematics) programs that promote hands-on exploration, critical thinking, and problem-solving skills.
+              </p>
+            </div>
+          </div>
+          <!-- card 3-->
+          <div
+            class="bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+            <!-- icon -->
+            <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+              <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
+            <!-- texts -->
+            <div class="flex flex-col gap-[10px]">
+              <!-- h3 -->
+              <div>
+                <h3 class="font-raleway font-bold text-[22px] leading-7">Language Immersion</h3>
+              </div>
+              <!-- p -->
+              <p class="font-medium leading-6">Through language immersion programs, children have the opportunity to
+                learn a second language, enhancing cognitive development and global awareness.</p>
+            </div>
+          </div>
+          <!-- card 4-->
+          <div
+            class="bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+            <!-- icon -->
+            <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <!-- texts -->
+            <div class="flex flex-col gap-[10px]">
+              <!-- h3 -->
+              <div>
+                <h3 class="font-raleway font-bold text-[22px] leading-7">Art and Creativity</h3>
+              </div>
+              <!-- p -->
+              <p class="font-medium leading-6">Art is celebrated at Little Learners Academy. Our art-focused activities
+                encourage self-expression, creativity, and the appreciation of various art forms.</p>
+            </div>
+          </div>
+          <!-- card 5-->
+          <div
+            class="bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+            <!-- icon -->
+            <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <!-- texts -->
+            <div class="flex flex-col gap-[10px]">
+              <!-- h3 -->
+              <div>
+                <h3 class="font-raleway font-bold text-[22px] leading-7">Outdoor Education</h3>
+              </div>
+              <!-- p -->
+              <p class="font-medium leading-6">Our expansive outdoor learning spaces provide a stimulating environment
+                for children to explore nature, fostering a connection with the environment.</p>
+            </div>
+          </div>
+          <!-- card 6-->
+          <div
+            class="bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+            <!-- icon -->
+            <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <!-- texts -->
+            <div class="flex flex-col gap-[10px]">
+              <!-- h3 -->
+              <div>
+                <h3 class="font-raleway font-bold text-[22px] leading-7">Play-Based Learning</h3>
+              </div>
+              <!-- p -->
+              <p class="font-medium leading-6">Play is an integral part of early childhood education. Our play-based
+                approach enhances social skills, emotional development, and imaginative thinking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section class="mt-20 lg:mt-[150px]">
+      <!-- holder of all -->
+      <div class="px-4 flex flex-col gap-[68px] lg:px-20">
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center px-4">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Our Features</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px] text-center">
+            <h2>What Students Learn</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[250px]">
+            <p class="text-center font-medium leading-6">At Little Learners Academy, we strive to cultivate a love for
+              learning and equip children with essential skills for their future success. Our academic programs cover a
+              wide range of subjects, allowing students to develop a strong foundation and discover their interests.
+              Some key areas of learning include</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-col gap-10 lg:grid lg:grid-cols-3">
+          <!-- card 1 -->
+          <div
+            class="p-[30px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative flex flex-col items-center">
+            <!-- absolute -->
+            <div
+              class="lg:w-[103px] lg:h-[282px] absolute top-0 mx-auto w-[93px] h-[237px] z-10 bg-[#FFEFE5] border-solid border-2 border-borderGrey rounded-[10px] border-t-0 rounded-t-none">
+            </div>
+            <!-- img div -->
+            <div class="lg:w-[320px] lg:h-[220px] w-[298px] h-[191px] relative m-auto z-20">
+              <img src="./images/academics/img-1.svg" alt="img-1" class="lg:mx-auto">
+            </div>
+            <!-- text div -->
+            <div class="flex flex-col gap-[10px] text-center pt-[30px]">
+              <p class="font-raleway font-bold text-[22px] leading-7">Language Arts</p>
+              <p class="font-outfit font-medium text-base leading-6">Reading, writing, storytelling, and communication
+                skills.</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="p-[30px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative flex flex-col items-center">
+            <!-- absolute -->
+            <div
+              class="lg:w-[103px] lg:h-[282px] absolute top-0 mx-auto w-[93px] h-[237px] z-10 bg-[#FFEFE5] border-solid border-2 border-borderGrey rounded-[10px] border-t-0 rounded-t-none">
+            </div>
+            <!-- img div -->
+            <div class="lg:w-[320px] lg:h-[220px] w-[298px] h-[191px] relative mb-10 mx-auto z-20">
+              <img src="./images/academics/img-2.svg" alt="img-1" class="lg:mx-auto">
+            </div>
+            <!-- text div -->
+            <div class="flex flex-col gap-[10px] text-center">
+              <p class="font-raleway font-bold text-[22px] leading-7">Mathematics</p>
+              <p class="font-outfit font-medium text-base leading-6">Number sense, basic operations, problem-solving,
+                and logic.</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="p-[30px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative flex flex-col items-center">
+            <!-- absolute -->
+            <div
+              class="lg:w-[103px] lg:h-[282px] absolute top-0 mx-auto w-[93px] h-[237px] z-10 bg-[#FFEFE5] border-solid border-2 border-borderGrey rounded-[10px] border-t-0 rounded-t-none">
+            </div>
+            <!-- img div -->
+            <div class="lg:w-[320px] lg:h-[220px] w-[298px] h-[191px] relative m-auto z-20">
+              <img src="./images/academics/img-3.svg" alt="img-1" class="lg:mx-auto">
+            </div>
+            <!-- text div -->
+            <div class="flex flex-col gap-[10px] text-center pt-[30px]">
+              <p class="font-raleway font-bold text-[22px] leading-7">Science</p>
+              <p class="font-outfit font-medium text-base leading-6">Exploring the natural world through hands-on
+                experiments and investigations.</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="p-[30px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative flex flex-col items-center">
+            <!-- absolute -->
+            <div
+              class="lg:w-[103px] lg:h-[282px] absolute top-0 mx-auto w-[93px] h-[237px] z-10 bg-[#FFEFE5] border-solid border-2 border-borderGrey rounded-[10px] border-t-0 rounded-t-none">
+            </div>
+            <!-- img div -->
+            <div class="lg:w-[320px] lg:h-[220px] w-[298px] h-[191px] relative m-auto z-20">
+              <img src="./images/academics/img-4.svg" alt="img-1" class="lg:mx-auto">
+            </div>
+            <!-- text div -->
+            <div class="flex flex-col gap-[10px] text-center pt-[30px]">
+              <p class="font-raleway font-bold text-[22px] leading-7">Social Studies</p>
+              <p class="font-outfit font-medium text-base leading-6">Cultivating an understanding of diverse cultures
+                and communities.</p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="hidden p-[30px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative lg:flex flex-col items-center">
+            <!-- absolute -->
+            <div
+              class="lg:w-[103px] lg:h-[282px] absolute top-0 mx-auto w-[93px] h-[237px] z-10 bg-[#FFEFE5] border-solid border-2 border-borderGrey rounded-[10px] border-t-0 rounded-t-none">
+            </div>
+            <!-- img div -->
+            <div class="lg:w-[320px] lg:h-[220px] w-[298px] h-[191px] relative m-auto z-20">
+              <img src="./images/academics/img-3.svg" alt="img-1" class="lg:mx-auto">
+            </div>
+            <!-- text div -->
+            <div class="flex flex-col gap-[10px] text-center pt-[30px]">
+              <p class="font-raleway font-bold text-[22px] leading-7">Arts and Crafts</p>
+              <p class="font-outfit font-medium text-base leading-6">Encouraging creativity through various art forms
+                and crafts.</p>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="hidden p-[30px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative lg:flex flex-col items-center">
+            <!-- absolute -->
+            <div
+              class="lg:w-[103px] lg:h-[282px] absolute top-0 mx-auto w-[93px] h-[237px] z-10 bg-[#FFEFE5] border-solid border-2 border-borderGrey rounded-[10px] border-t-0 rounded-t-none">
+            </div>
+            <!-- img div -->
+            <div class="lg:w-[320px] lg:h-[220px] w-[298px] h-[191px] relative m-auto z-20">
+              <img src="./images/academics/img-1.svg" alt="img-1" class="lg:mx-auto">
+            </div>
+            <!-- text div -->
+            <div class="flex flex-col gap-[10px] text-center pt-[30px]">
+              <p class="font-raleway font-bold text-[22px] leading-7">Physical Education</p>
+              <p class="font-outfit font-medium text-base leading-6">Promoting physical fitness, coordination, and
+                teamwork.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 -->
+    <section class="mt-20 lg:mt-[150px]">
+      <!-- holder of all -->
+      <div class="px-4 flex flex-col gap-[68px] lg:px-20">
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center px-4">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Our Gallery</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px] text-center">
+            <h2>Our Rooms Gallery</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[250px]">
+            <p class="text-center font-medium leading-6">Step into our Gallery and immerse yourself in a visual journey
+              of cherished moments and unforgettable experiences at our kindergarten school.</p>
+          </div>
+        </div>
+        <!-- middle -->
+        <div class="flex gap-[10px] justify-center">
+          <!-- all -->
+          <div class="py-[10px] px-4 border-solid border-2 border-borderGrey rounded-[6px] font-semibold">
+            <button>All</button>
+          </div>
+          <!-- clasrooms -->
+          <div class="py-[10px] px-4 border-solid border-2 border-borderGrey rounded-[6px] bg-white font-semibold">
+            <button>Classrooms</button>
+          </div>
+          <!-- Library -->
+          <div class="py-[10px] px-4 border-solid border-2 border-borderGrey rounded-[6px] bg-white font-semibold">
+            <button>Library</button>
+          </div>
+          <!-- Science Lab -->
+          <div
+            class="hidden lg:flex py-[10px] px-4 border-solid border-2 border-borderGrey rounded-[6px] bg-white font-semibold">
+            <button>Science Lab</button>
+          </div>
+          <!-- Computer Lab -->
+          <div
+            class="hidden lg:flex py-[10px] px-4 border-solid border-2 border-borderGrey rounded-[6px] bg-white font-semibold">
+            <button>Computer Lab</button>
+          </div>
+          <!-- Garden and Nature Area -->
+          <div
+            class="hidden lg:flex py-[10px] px-4 border-solid border-2 border-borderGrey rounded-[6px] bg-white font-semibold">
+            <button>Garden and Nature Area</button>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-col gap-20 lg:gap-[120px]">
+          <!-- card -->
+          <div
+            class="relative flex flex-col items-center lg:justify-between mt-[120px] lg:mt-[120px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow pb-[30px] pt-[135px]">
+            <!-- images -->
+            <div class="absolute top-[-100px] px-[50px] lg:px-10 flex gap-10">
+              <!-- absolute image -->
+              <div class="mx-auto">
+                <img src="./images/academics/Image (2).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image.png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (2).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (3).png" alt="img">
+              </div>
+            </div>
+            <!-- arrows -->
+            <div
+              class="flex flex-col gap-[40px] lg:w-[100%] lg:px-10 mt-[34px] lg:mt-[38px] lg:justify-between lg:flex-row-reverse">
+              <!-- arrow -->
+              <div class="flex justify-center gap-4">
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <!-- text with arrows -->
+              <div>
+                <p class="font-raleway font-bold text-3xl text-center">Classrooms</p>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-5 px-[30px] text-center mt-5 lg:text-center lg:px-10">
+              <p>Our well-equipped classrooms are designed to provide a nurturing and stimulating learning environment.
+                Each classroom is thoughtfully arranged to inspire creativity, curiosity, and engagement.</p>
+            </div>
+          </div>
+          <!-- card 2-->
+          <div
+            class="relative flex flex-col items-center lg:justify-between mt-[120px] lg:mt-[120px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow pb-[30px] pt-[135px]">
+            <!-- images -->
+            <div class="absolute top-[-100px] px-[50px] lg:px-10 flex gap-10">
+              <!-- absolute image -->
+              <div class="mx-auto">
+                <img src="./images/academics/Image (4).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (5).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (6).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (7).png" alt="img">
+              </div>
+            </div>
+            <!-- arrows -->
+            <div
+              class="flex flex-col gap-[40px] lg:w-[100%] lg:px-10 mt-[34px] lg:mt-[38px] lg:justify-between lg:flex-row-reverse">
+              <!-- arrow -->
+              <div class="flex justify-center gap-4">
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <!-- text with arrows -->
+              <div>
+                <p class="font-raleway font-bold text-3xl text-center">Library</p>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-5 px-[30px] text-center mt-5 lg:text-left lg:px-10">
+              <p>Our expansive library is a treasure trove of books, fostering a love for reading and supporting
+                students' literacy development.</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="relative flex flex-col items-center lg:justify-between mt-[120px] lg:mt-[120px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow pb-[30px] pt-[135px]">
+            <!-- images -->
+            <div class="absolute top-[-100px] px-[50px] lg:px-10 flex gap-10">
+              <!-- absolute image -->
+              <div class="mx-auto">
+                <img src="./images/academics/Image (8).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (9).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (10).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (11).png" alt="img">
+              </div>
+            </div>
+            <!-- arrows -->
+            <div
+              class="flex flex-col gap-[40px] lg:w-[100%] lg:px-10 mt-[34px] lg:mt-[38px] lg:justify-between lg:flex-row-reverse">
+              <!-- arrow -->
+              <div class="flex justify-center gap-4">
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <!-- text with arrows -->
+              <div>
+                <p class="font-raleway font-bold text-3xl text-center">Science Lab</p>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-5 px-[30px] text-center mt-5 lg:text-left lg:px-10">
+              <p>Our hands-on science lab allows students to conduct experiments and explore scientific concepts in a
+                fun and interactive way.</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="relative flex flex-col items-center lg:justify-between mt-[120px] lg:mt-[120px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow pb-[30px] pt-[135px]">
+            <!-- images -->
+            <div class="absolute top-[-100px] px-[50px] lg:px-10 flex gap-10">
+              <!-- absolute image -->
+              <div class="mx-auto">
+                <img src="./images/academics/Image (12).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (13).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (14).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (15).png" alt="img">
+              </div>
+            </div>
+            <!-- arrows -->
+            <div
+              class="flex flex-col gap-[40px] lg:w-[100%] lg:px-10 mt-[34px] lg:mt-[38px] lg:justify-between lg:flex-row-reverse">
+              <!-- arrow -->
+              <div class="flex justify-center gap-4">
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <!-- text with arrows -->
+              <div>
+                <p class="font-raleway font-bold text-3xl text-center">Computer Lab</p>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-5 px-[30px] text-center mt-5 lg:text-left lg:px-10">
+              <p>Equipped with age-appropriate technology, the computer lab enhances students' digital literacy and
+                computational skills</p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="relative flex flex-col items-center lg:justify-between mt-[120px] lg:mt-[120px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow pb-[30px] pt-[135px]">
+            <!-- images -->
+            <div class="absolute top-[-100px] px-[50px] lg:px-10 flex gap-10">
+              <!-- absolute image -->
+              <div class="mx-auto">
+                <img src="./images/academics/Image (16).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (17).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (18).png" alt="img">
+              </div>
+              <!-- absolute image -->
+              <div class="hidden lg:flex mx-auto">
+                <img src="./images/academics/Image (19).png" alt="img">
+              </div>
+            </div>
+            <!-- arrows -->
+            <div
+              class="flex flex-col gap-[40px] lg:w-[100%] lg:px-10 mt-[34px] lg:mt-[38px] lg:justify-between lg:flex-row-reverse">
+              <!-- arrow -->
+              <div class="flex justify-center gap-4">
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <!-- text with arrows -->
+              <div>
+                <p class="font-raleway font-bold text-3xl text-center">Garden and Nature Area</p>
+              </div>
+            </div>
+            <!-- text -->
+            <div class="flex flex-col gap-5 px-[30px] text-center mt-5 lg:text-left lg:px-10">
+              <p>Our garden and nature area offer an opportunity for children to connect with nature and learn about
+                plants and the environment.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="mt-20 px-4 pb-5 lg:pb-10 lg:mt-[150px] lg:px-[50px]">
+    <!-- holder off all -->
+    <div
+      class="bg-white px-[30px] pt-[60px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow flex flex-col gap-[30px]">
+      <!-- upper div -->
+      <div class="flex flex-col gap-10 lg:flex lg:flex-row">
+        <!-- holder of both -->
+        <div class="flex flex-col gap-10">
+          <!-- logo and text -->
+          <div class="text-center lg:flex lg:flex-col lg:items-start lg:pr-20">
+            <div class="flex justify-center lg:flex lg:items-start">
+              <img src="./images/index/logo.svg" alt="logo" class="w-[200px] h-[100px]">
+            </div>
+            <p class="font-medium text-base leading-6 lg:text-left">We believe in the power of play to foster
+              creativity, problem-solving skills, and imagination.</p>
+          </div>
+          <!-- contacts -->
+          <div class="flex flex-col items-start gap-5">
+            <!-- icon and info -->
+            <div class="flex items-center gap-1">
+              <!-- icon -->
+              <div
+                class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-veryLightOrange cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <p class="font-medium text-base leading-6">hello@littlelearners.com</p>
+            </div>
+            <!-- icon and info -->
+            <div class="flex items-center gap-1">
+              <!-- icon -->
+              <div
+                class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-veryLightOrange cursor-pointer">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p class="font-medium text-base leading-6">+91 91813 23 2309</p>
+            </div>
+            <!-- icon and info -->
+            <div class="flex items-center gap-1">
+              <!-- icon -->
+              <div
+                class="py-[6px] px-[12px] border-solid border-2 border-borderGrey rounded-[4px] bg-veryLightOrange cursor-pointer">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <p class="font-medium text-base leading-6">Somewhere in the World</p>
+            </div>
+          </div>
+        </div>
+        <!-- links -->
+        <div class="grid grid-cols-2 gap-x-[30px] gap-y-[50px] lg:grid-cols-4 lg:pt-9">
+          <!-- home -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">Home</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Features</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Our Testimonials</a></p>
+              <p><a href="" class="font-medium text-base leading-6">FAQ</a></p>
+            </div>
+          </div>
+          <!-- Academics -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">Academics</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Special Features</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Gallery</a></p>
+              <!-- <p><a href="" class="font-medium text-base leading-6">FAQ</a></p> -->
+            </div>
+          </div>
+          <!-- About Us -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">About Us</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Our Mission</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Our Vission</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Awards and Recognitions</a></p>
+              <p><a href="" class="font-medium text-base leading-6">History</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Teachers</a></p>
+            </div>
+          </div>
+          <!-- Contact Us -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">Contact Us</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Information</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Map & Direction</a></p>
+              <!-- <p><a href="" class="font-medium text-base leading-6">FAQ</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom div -->
+      <div class="flex flex-col gap-4">
+        <!-- top -->
+        <div
+          class="flex flex-col items-center gap-5 border-solid border-2 border-borderGrey border-l-0 border-r-0 py-4 lg:flex lg:flex-row lg:justify-between">
+          <!-- text holder -->
+          <div class="flex gap-[6px]">
+            <p class="font-medium text-[14px] leading-[21px]">Terms of Service</p>
+            <div class="px-[4px] border-solid border-[1px] border-borderGrey border-t-0 border-b-0">
+              <p class="font-medium text-[14px] leading-[21px]">Privacy Policy</p>
+            </div>
+            <p class="font-medium text-[14px] leading-[21px]">Cookie Policy</p>
+          </div>
+          <!-- icons -->
+          <div class="flex justify-center gap-[10px]">
+            <div
+              class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-[#FFDECC] cursor-pointer">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div
+              class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-[#FFDECC] cursor-pointer">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div
+              class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-[#FFDECC] cursor-pointer">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="text-center">
+          <p class="font-medium text-[14px] leading-[21px] text-[#656567]">Copyright © [2023] Little Learners Academy.
+            All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
