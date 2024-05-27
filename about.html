@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- FA -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        screens:
+        {
+          lg: '1090px'
+        },
+        extend: {
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            raleway: ['Raleway', 'sans-serif'],
+          },
+          colors: {
+            mainOrange: '#FF8D4D',
+            borderGrey: '#262626',
+            veryLightOrange: '#FFEFE5',
+            bodyColor: '#FFF5F0'
+          },
+          boxShadow: {
+            oreangeShadow: '6px 6px 0px 1px #FFBE99',
+            cardShadow: '4px 4px 0px 1px #1E1E1E'
+          },
+        }
+      }
+    }
+  </script>
+  <title>Mini Project</title>
+</head>
+
+<body class="bg-bodyColor">
+  <header class="flex flex-col font-outfit">
+    <!-- bg -->
+    <div class="flex justify-center mt-10 cursor-pointer lg:hidden px-4">
+      <img src="./images/index/background.svg" alt="background" class="w-full">
+    </div>
+    <!-- desktop bg -->
+    <div class="hidden lg:flex  mt-4 px-[50px] cursor-pointer">
+      <img src="./images/index/desktopBg.svg" alt="bg" class="w-full">
+    </div>
+    <!-- nav -->
+    <nav class="flex justify-center px-4 lg:px-[50px] mt-[14px]">
+      <!-- holder -->
+      <div
+        class="w-full flex items-center rounded-lg overflow-hidden justify-between border-solid border-2 border-borderGrey">
+        <!-- logo -->
+        <div class=" bg-mainOrange py-4 px-5 border-solid border-r-2 border-borderGrey h-full">
+          <img src="./images/index/logo.svg" alt="logo">
+        </div>
+        <!-- navbar -->
+        <div class="hidden lg:block">
+          <ul class="flex ">
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium bg-veryLightOrange">
+              <a href="about.html">About Us</a>
+            </li>
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="academics.html">Academics</a>
+            </li>
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="#">Admissions</a>
+            </li>
+            <li
+              class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium hover:bg-veryLightOrange">
+              <a href="#">Student Life</a>
+            </li>
+            <li class="py-[21px] px-[30px] border-solid border-l-2 border-borderGrey font-medium bg-[#FFAE80]"><a
+                href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- burger -->
+        <div
+          class="px-[30px] py-[17px] border-solid border-l-2 border-borderGrey bg-veryLightOrange cursor-pointer block lg:hidden">
+          <img src="./images/index/burger.svg" alt="burger">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main class="mt-10 font-outfit">
+    <!-- section 1 -->
+    <section>
+      <!-- holder of all -->
+      <div class="px-4 lg:px-20">
+        <!-- holder -->
+        <div class="relative bg-white px-[30px] pt-[60px] pb-[50px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow flex flex-col items-center gap-5 text-center
+              lg:flex lg:flex-row lg:text-left lg:gap-[100px] lg:px-20">
+          <!-- corner image -->
+          <div class="absolute top-0 left-0">
+            <img src="images/about/corner.svg" alt="corner">
+          </div>
+          <!-- btn and heading -->
+          <div class="lg:py-[102px] flex flex-col gap-[10px] lg:w-[260%]">
+            <div class="mb-[10px]">
+              <button class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">Overview</button>
+            </div>
+            <div>
+              <h2 class="font-raleway font-bold text-3xl lg:text-[38px]">Welcome to Little Learners Academy</h2>
+            </div>
+          </div>
+          <!-- text -->
+          <div class="lg:py-[102px]">
+            <p class="font-medium">A leading kinder garden school dedicated to providing a nurturing and stimulating
+              environment for young learners. With a commitment to excellence in early education, we believe in shaping
+              curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach
+              fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their
+              full potential.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="mt-20 lg:mt-[150px] ">
+      <!-- holder of all -->
+      <div class="px-4 text-center flex flex-col gap-[50px]">
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Mission & Visions</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px]">
+            <h2>Our Mission & Visions</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[296px]">
+            <p class="text-center font-medium leading-6">We are here to provide a nurturing and inclusive environment
+              where young minds can thrive, fostering a love for learning and personal growth.</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-col gap-[30px] lg:grid lg:grid-cols-2 lg:px-20 lg:gap-10">
+          <!-- card -->
+          <div
+            class="p-10 border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow bg-white flex flex-col gap-10">
+            <div class="flex flex-col gap-[10px]">
+              <!-- heading and svg -->
+              <div class="flex justify-between">
+                <h2 class="font-raleway font-bold text-3xl lg:text-[38px] items-end flex">Mission</h2>
+                <img src="./images/about/mountain.svg" alt="mountain">
+              </div>
+            </div>
+            <!-- text -->
+            <div>
+              <p class="text-left">At Little Learners Academy, our mission is to inspire a passion for learning and
+                empower young minds to
+                become confident, compassionate, and creative individuals. We strive to create a safe and inclusive
+                space where children thrive academically, socially, and emotionally, setting the stage for a successful
+                educational journey.</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="p-10 border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow bg-white flex flex-col gap-10">
+            <div class="flex flex-col gap-[10px]">
+              <!-- heading and svg -->
+              <div class="flex justify-between">
+                <h2 class="font-raleway font-bold text-3xl lg:text-[38px] items-end flex">Vision</h2>
+                <img src="./images/about/binocles.svg" alt="binocles">
+              </div>
+            </div>
+            <!-- text -->
+            <div>
+              <p class="text-left">Our vision is to be a beacon of educational excellence, where children are encouraged
+                to explore, discover, and express their unique talents. We aim to foster a generation of lifelong
+                learners equipped with critical thinking, empathy, and a deep appreciation for diversity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section class="mt-20 lg:mt-[150px]">
+      <!-- holder of all -->
+      <div class="px-4 text-center flex flex-col gap-[50px]">
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Our Achievements</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px]">
+            <h2>Our Awards and Recognitions</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[296px]">
+            <p class="text-center font-medium leading-6">Little Learners Academy takes pride in our commitment to
+              delivering high-quality education and outstanding student experiences. We are honored to have received
+              various awards and recognitions for our dedication to early childhood education. These accolades reflect
+              our team's relentless efforts in creating an exceptional learning environment for our students.</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-col gap-[30px] lg:px-20">
+          <!-- card holder -->
+          <div class="lg:grid lg:grid-cols-3 lg:gap-x-[30px]">
+            <!-- card -->
+            <div
+              class="text-left bg-white pt-[50px] pl-[30px] pr-[40px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+              <!-- icon -->
+              <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <!-- texts -->
+              <div class="flex flex-col gap-[10px]">
+                <!-- h3 -->
+                <div>
+                  <h3 class="font-raleway font-bold text-[22px] leading-7">Environmental Stewardship Award</h3>
+                </div>
+                <!-- p -->
+                <p class="font-medium leading-6">Received from the Green Earth Society for our dedication to
+                  environmental education, sustainable practices, and fostering a love for nature in our students.</p>
+              </div>
+            </div>
+            <!-- card 2-->
+            <div
+              class="hidden lg:block text-left bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+              <!-- icon -->
+              <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <!-- texts -->
+              <div class="flex flex-col gap-[10px]">
+                <!-- h3 -->
+                <div>
+                  <h3 class="font-raleway font-bold text-[22px] leading-7">Outstanding Early Childhood Education Awar
+                  </h3>
+                </div>
+                <!-- p -->
+                <p class="font-medium leading-6">Presented by the National Association for the Education of Young
+                  Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional
+                  early childhood education and fostering a nurturing learning environment.</p>
+              </div>
+            </div>
+            <!-- card 3-->
+            <div
+              class="hidden lg:block text-left bg-white pt-[50px] pl-10 pr-[30px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow relative">
+              <!-- icon -->
+              <div class="absolute top-[-28px] bg-[#FFDECC] p-4 border-solid border-2 border-borderGrey rounded-lg">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <!-- texts -->
+              <div class="flex flex-col gap-[10px]">
+                <!-- h3 -->
+                <div>
+                  <h3 class="font-raleway font-bold text-[22px] leading-7">Innovative STEAM Education Award</h3>
+                </div>
+                <!-- p -->
+                <p class="font-medium leading-6">Awarded by the Education Excellence Association for our pioneering
+                  efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics)
+                  programs that ignite creativity and critical thinking in young learners.</p>
+              </div>
+            </div>
+          </div>
+          <!-- bottom of bottom -->
+          <div class="flex justify-between items-center">
+            <!-- left -->
+            <div>
+              <p class="font-raleway font-bold text-[18px] leading-[23.8px]">8 More Awards</p>
+            </div>
+            <!-- right -->
+            <div class="flex gap-4">
+              <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="p-3 bg-white border-solid border-2 border-[#333333] rounded-lg cursor-pointer">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 -->
+    <section class="mt-20 lg:mt-[150px]">
+      <!-- holder of all -->
+      <div class="px-4 text-center flex flex-col gap-[50px] lg:px-20">
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Our Achievements</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px]">
+            <h2>Our Awards and Recognitions</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[296px]">
+            <p class="text-center font-medium leading-6">Little Learners Academy takes pride in our commitment to
+              delivering high-quality education and outstanding student experiences. We are honored to have received
+              various awards and recognitions for our dedication to early childhood education. These accolades reflect
+              our team's relentless efforts in creating an exceptional learning environment for our students.</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div
+          class="py-[50px] px-5 lg:p-[100px] bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+          <!-- holder of all bottom -->
+          <div class="flex flex-col gap-20">
+            <!-- line -->
+            <!-- <div>
+              <img src="images/about/line.svg" alt="line">
+            </div> -->
+            <!-- first -->
+            <div class="flex flex-col gap-[30px] lg:flex lg:flex-row">
+              <!-- additional div -->
+              <div class="px-[40px] flex ">
+                <!-- year -->
+                <div
+                  class=" bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow py-[20.5px] pr-6 pl-2 flex items-center justify-center gap-5">
+                  <div>
+                    <img src="./images/about/squares.svg" alt="squares" class="max-w-[50px]">
+                  </div>
+                  <!-- 2k -->
+                  <div>
+                    <p class="font-raleway font-bold text-[38px] leading-[49.4px]">2023</p>
+                  </div>
+                </div>
+              </div>
+              <!-- texts -->
+              <div class="text-left flex flex-col gap-[10px]">
+                <p class="font-raleway font-bold text-[22px] leading-[28.6px]">Resilience and Future Horizons</p>
+                <p class="font-medium text-base leading-6">Adapting to new challenges, we remained committed to our
+                  mission of providing an exceptional early
+                  education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we
+                  continue shaping the leaders and thinkers of tomorrow.</p>
+              </div>
+            </div>
+            <!-- second -->
+            <div class="flex flex-col gap-[30px] lg:flex-row">
+              <!-- additional div -->
+              <div class="px-[40px] flex ">
+                <!-- year -->
+                <div
+                  class=" bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow py-[20.5px] pr-6 pl-2 flex items-center justify-center gap-5">
+                  <div>
+                    <img src="./images/about/squares.svg" alt="squares" class="max-w-[50px]">
+                  </div>
+                  <!-- 2k -->
+                  <div>
+                    <p class="font-raleway font-bold text-[38px] leading-[49.4px]">2017</p>
+                  </div>
+                </div>
+              </div>
+              <!-- texts -->
+              <div class="text-left flex flex-col gap-[10px]">
+                <p class="font-raleway font-bold text-[22px] leading-[28.6px]">Innovation and Technology</p>
+                <p class="font-medium text-base leading-6">Innovation became the driving force behind our kindergarten's
+                  progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and
+                  interactive learning experiences for our students.
+                <p>
+              </div>
+            </div>
+            <!-- third -->
+            <div class="flex flex-col gap-[30px] lg:flex-row">
+              <!-- additional div -->
+              <div class="px-[40px] flex ">
+                <!-- year -->
+                <div
+                  class=" bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow py-[20.5px] pr-6 pl-2 flex items-center justify-center gap-5">
+                  <div>
+                    <img src="./images/about/squares.svg" alt="squares" class="max-w-[50px]">
+                  </div>
+                  <!-- 2k -->
+                  <div>
+                    <p class="font-raleway font-bold text-[38px] leading-[49.4px]">2012</p>
+                  </div>
+                </div>
+              </div>
+              <!-- texts -->
+              <div class="text-left flex flex-col gap-[10px]">
+                <p class="font-raleway font-bold text-[22px] leading-[28.6px]">Expansion and Recognition</p>
+                <p class="font-medium text-base leading-6">These years marked as a period of expansion and recognition
+                  for our school. As we extended our facilities and enhanced our curriculum, we received accolades for
+                  our commitment to quality education and innovative teaching methodologies.
+                <p>
+              </div>
+            </div>
+            <!-- fourth -->
+            <div class="flex flex-col gap-[30px] lg:flex-row">
+              <!-- additional div -->
+              <div class="px-[40px] flex">
+                <!-- year -->
+                <div
+                  class=" bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow py-[20.5px] pr-6 pl-2 flex items-center justify-center gap-5">
+                  <div>
+                    <img src="./images/about/squares.svg" alt="squares" class="max-w-[50px]">
+                  </div>
+                  <!-- 2k -->
+                  <div>
+                    <p class="font-raleway font-bold text-[38px] leading-[49.4px]">2005</p>
+                  </div>
+                </div>
+              </div>
+              <!-- texts -->
+              <div class="text-left flex flex-col gap-[10px]">
+                <p class="font-raleway font-bold text-[22px] leading-[28.6px]">Inception and Growth</p>
+                <p class="font-medium text-base leading-6">Established in 2005, our kindergarten school began its
+                  journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over
+                  the next five years, we witnessed significant growth.
+                <p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 5 -->
+    <section class="mt-20 lg:mt-[150px]">
+      <!-- holder of all -->
+      <div class="px-4 text-center flex flex-col gap-[50px]">
+        <!-- top -->
+        <div class="flex flex-col gap-[10px] items-center">
+          <!-- buttonlike div -->
+          <div class="py-2 px-[14px] border-2 border-black rounded-[6px] bg-white">
+            <p>Our Teachers With Experties</p>
+          </div>
+          <!-- h2 div -->
+          <div class="font-raleway font-bold text-[38px] leading-[49.4px]">
+            <h2>Our Team Members</h2>
+          </div>
+          <!-- p div -->
+          <div class="lg:px-[200px]">
+            <p class="text-center font-medium leading-6">At Little Learners Academy, our teaching team is the heart of
+              our educational journey. We take great pride in employing highly qualified and passionate educators who
+              possess a deep understanding of early childhood development. Our teachers create a warm and engaging
+              atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning.</p>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:px-20">
+          <!-- card 1 -->
+          <div
+            class="p-[30px] flex flex-col gap-6 bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+            <!-- upper div -->
+            <div class="flex justify-between">
+              <!-- left -->
+              <div class="flex gap-[10px] items-center">
+                <img src="./images/about/girl-1.svg" alt="girl">
+                <p class="font-raleway font-extrabold text-xl text-left">Ms. Sarah Anderson</p>
+              </div>
+              <!-- right -->
+              <div class="w-12 h-12 bg-[#FFDECC] py-3 px-3 border-solid border-2 border-borderGrey rounded-lg cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <!-- lower div -->
+            <div
+              class="p-5 text-left flex flex-col gap-3 bg-[#FFF5F0] border-solid border-2 border-borderGrey rounded-[10px]">
+              <div>
+                <p class="font-semibold text-xl text-[#333333]">Qualification:Bachelor's Degree in Early Childhood
+                  Education</p>
+              </div>
+              <div>
+                <p class="font-medium text-base leading-6">Ms. Sarah is a passionate educator with over 10 years of
+                  experience in guiding young minds. Her warm
+                  and nurturing approach creates a welcoming classroom environment where children feel comfortable to
+                  explore and learn.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="p-[30px] flex flex-col gap-6 bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+            <!-- upper div -->
+            <div class="flex justify-between">
+              <!-- left -->
+              <div class="flex gap-[10px] items-center">
+                <img src="./images/about/boy-1.svg" alt="boy">
+                <p class="font-raleway font-extrabold text-xl text-left">Mr. David Roberts</p>
+              </div>
+              <!-- right -->
+              <div class="w-12 h-12 bg-[#FFDECC] py-3 px-3 border-solid border-2 border-borderGrey rounded-lg cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <!-- lower div -->
+            <div
+              class="p-5 text-left flex flex-col gap-3 bg-[#FFF5F0] border-solid border-2 border-borderGrey rounded-[10px]">
+              <div>
+                <p class="font-semibold text-xl text-[#333333]">Qualification: Master's Degree in Elementary Education
+                </p>
+              </div>
+              <div>
+                <p class="font-medium text-base leading-6">With a strong background in elementary education, Mr. David
+                  brings a creative and interactive teaching style to his classroom. His enthusiasm for learning
+                  inspires students to ask questions and think critically.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="p-[30px] flex flex-col gap-6 bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+            <!-- upper div -->
+            <div class="flex justify-between">
+              <!-- left -->
+              <div class="flex gap-[10px] items-center">
+                <img src="./images/about/girl-2.svg" alt="girl">
+                <p class="font-raleway font-extrabold text-xl text-left">Ms. Emily Hernandez</p>
+              </div>
+              <!-- right -->
+              <div class="w-12 h-12 bg-[#FFDECC] py-3 px-3 border-solid border-2 border-borderGrey rounded-lg cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <!-- lower div -->
+            <div
+              class="p-5 text-left flex flex-col gap-3 bg-[#FFF5F0] border-solid border-2 border-borderGrey rounded-[10px]">
+              <div>
+                <p class="font-semibold text-xl text-[#333333]">Qualification: Diploma in Child Psychology
+                </p>
+              </div>
+              <div>
+                <p class="font-medium text-base leading-6">Ms. Emily's expertise in child psychology enables her to
+                  understand each child's unique needs and provide individualized support. Her caring nature fosters a
+                  strong sense of belonging and confidence in her students.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="p-[30px] flex flex-col gap-6 bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+            <!-- upper div -->
+            <div class="flex justify-between">
+              <!-- left -->
+              <div class="flex gap-[10px] items-center">
+                <img src="./images/about/boy-2.svg" alt="boy">
+                <p class="font-raleway font-extrabold text-xl text-left">Mr. Michael Turner</p>
+              </div>
+              <!-- right -->
+              <div class="w-12 h-12 bg-[#FFDECC] py-3 px-3 border-solid border-2 border-borderGrey rounded-lg cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <!-- lower div -->
+            <div
+              class="p-5 text-left flex flex-col gap-3 bg-[#FFF5F0] border-solid border-2 border-borderGrey rounded-[10px]">
+              <div>
+                <p class="font-semibold text-xl text-[#333333]">Qualification: Bachelor's Degree in Physical Education
+                </p>
+              </div>
+              <div>
+                <p class="font-medium text-base leading-6">Mr. Michael's passion for physical fitness and sports shines
+                  through in his energetic classes. He encourages students to stay active, promoting teamwork and a
+                  healthy lifestyle.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="p-[30px] flex flex-col gap-6 bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+            <!-- upper div -->
+            <div class="flex justify-between">
+              <!-- left -->
+              <div class="flex gap-[10px] items-center">
+                <img src="./images/about/girl-3.svg" alt="girl">
+                <p class="font-raleway font-extrabold text-xl text-left">Ms. Jessica Lee</p>
+              </div>
+              <!-- right -->
+              <div class="w-12 h-12 bg-[#FFDECC] py-3 px-3 border-solid border-2 border-borderGrey rounded-lg cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <!-- lower div -->
+            <div
+              class="p-5 text-left flex flex-col gap-3 bg-[#FFF5F0] border-solid border-2 border-borderGrey rounded-[10px]">
+              <div>
+                <p class="font-semibold text-xl text-[#333333]">Qualification: Master's Degree in Special Education
+                </p>
+              </div>
+              <div>
+                <p class="font-medium text-base leading-6">Ms. Jessica's specialization in special education allows her
+                  to create an inclusive and supportive learning environment for all students. She is dedicated to
+                  helping every child reach their full potential.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="p-[30px] flex flex-col gap-6 bg-white border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow">
+            <!-- upper div -->
+            <div class="flex justify-between">
+              <!-- left -->
+              <div class="flex gap-[10px] items-center">
+                <img src="./images/about/boy-3.svg" alt="boy">
+                <p class="font-raleway font-extrabold text-xl text-left">Mr. William Parker</p>
+              </div>
+              <!-- right -->
+              <div class="w-12 h-12 bg-[#FFDECC] py-3 px-3 border-solid border-2 border-borderGrey rounded-lg cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+            <!-- lower div -->
+            <div
+              class="p-5 text-left flex flex-col gap-3 bg-[#FFF5F0] border-solid border-2 border-borderGrey rounded-[10px]">
+              <div>
+                <p class="font-semibold text-xl text-[#333333]">Qualification: Bachelor's Degree in Fine Arts
+                </p>
+              </div>
+              <div>
+                <p class="font-medium text-base leading-6">Mr. William's background in fine arts brings creativity and
+                  imagination to his classroom. Through art projects and activities, he nurtures the artistic expression
+                  and self-confidence of his students.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="mt-20 px-4 pb-5 lg:pb-10 lg:mt-[150px] lg:px-[50px]">
+    <!-- holder off all -->
+    <div
+      class="bg-white px-[30px] pt-[60px] pb-[30px] border-solid border-2 border-borderGrey rounded-[10px] shadow-cardShadow flex flex-col gap-[30px]">
+      <!-- upper div -->
+      <div class="flex flex-col gap-10 lg:flex lg:flex-row">
+        <!-- holder of both -->
+        <div class="flex flex-col gap-10">
+          <!-- logo and text -->
+          <div class="text-center lg:flex lg:flex-col lg:items-start lg:pr-20">
+            <div class="flex justify-center lg:flex lg:items-start">
+              <img src="./images/index/logo.svg" alt="logo" class="w-[200px] h-[100px]">
+            </div>
+            <p class="font-medium text-base leading-6 lg:text-left">We believe in the power of play to foster
+              creativity, problem-solving skills, and imagination.</p>
+          </div>
+          <!-- contacts -->
+          <div class="flex flex-col items-start gap-5">
+            <!-- icon and info -->
+            <div class="flex items-center gap-1">
+              <!-- icon -->
+              <div
+                class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-veryLightOrange cursor-pointer">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <p class="font-medium text-base leading-6">hello@littlelearners.com</p>
+            </div>
+            <!-- icon and info -->
+            <div class="flex items-center gap-1">
+              <!-- icon -->
+              <div
+                class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-veryLightOrange cursor-pointer">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p class="font-medium text-base leading-6">+91 91813 23 2309</p>
+            </div>
+            <!-- icon and info -->
+            <div class="flex items-center gap-1">
+              <!-- icon -->
+              <div
+                class="py-[6px] px-[12px] border-solid border-2 border-borderGrey rounded-[4px] bg-veryLightOrange cursor-pointer">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <p class="font-medium text-base leading-6">Somewhere in the World</p>
+            </div>
+          </div>
+        </div>
+        <!-- links -->
+        <div class="grid grid-cols-2 gap-x-[30px] gap-y-[50px] lg:grid-cols-4 lg:pt-9">
+          <!-- home -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">Home</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Features</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Our Testimonials</a></p>
+              <p><a href="" class="font-medium text-base leading-6">FAQ</a></p>
+            </div>
+          </div>
+          <!-- Academics -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">Academics</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Special Features</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Gallery</a></p>
+              <!-- <p><a href="" class="font-medium text-base leading-6">FAQ</a></p> -->
+            </div>
+          </div>
+          <!-- About Us -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">About Us</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Our Mission</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Our Vission</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Awards and Recognitions</a></p>
+              <p><a href="" class="font-medium text-base leading-6">History</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Teachers</a></p>
+            </div>
+          </div>
+          <!-- Contact Us -->
+          <div class="flex flex-col gap-5">
+            <p><a href="" class="font-bold text-base leading-6">Contact Us</a></p>
+            <!-- additionals -->
+            <div class="flex flex-col gap-[14px]">
+              <p><a href="" class="font-medium text-base leading-6">Information</a></p>
+              <p><a href="" class="font-medium text-base leading-6">Map & Direction</a></p>
+              <!-- <p><a href="" class="font-medium text-base leading-6">FAQ</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom div -->
+      <div class="flex flex-col gap-4">
+        <!-- top -->
+        <div
+          class="flex flex-col items-center gap-5 border-solid border-2 border-borderGrey border-l-0 border-r-0 py-4 lg:flex lg:flex-row lg:justify-between">
+          <!-- text holder -->
+          <div class="flex gap-[6px]">
+            <p class="font-medium text-[14px] leading-[21px]">Terms of Service</p>
+            <div class="px-[4px] border-solid border-[1px] border-borderGrey border-t-0 border-b-0">
+              <p class="font-medium text-[14px] leading-[21px]">Privacy Policy</p>
+            </div>
+            <p class="font-medium text-[14px] leading-[21px]">Cookie Policy</p>
+          </div>
+          <!-- icons -->
+          <div class="flex justify-center gap-[10px]">
+            <div
+              class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-[#FFDECC] cursor-pointer">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div
+              class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-[#FFDECC] cursor-pointer">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div
+              class="py-[6px] px-[10px] border-solid border-2 border-borderGrey rounded-[4px] bg-[#FFDECC] cursor-pointer">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="text-center">
+          <p class="font-medium text-[14px] leading-[21px] text-[#656567]">Copyright © [2023] Little Learners Academy.
+            All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
